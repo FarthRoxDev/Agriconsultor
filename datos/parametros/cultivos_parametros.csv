@@ -1,0 +1,3 @@
+slug,nombre_comun,nombre_cientifico,tipo,altitud_min_msnm,altitud_max_msnm,ph_min,ph_max,densidad_plantas_ha,dist_hileras_m,dist_plantas_m,tbase_gdd_c,ciclo_dias,rend_bueno_t_ha,rend_medio_t_ha,estado,fuente,fecha_consulta
+papa,Papa,Solanum tuberosum,hortaliza,,,,,,,,,,,,EJEMPLO_NO_VALIDADO,[POR COMPLETAR],
+cafe,Café,Coffea arabica,frutal,,,,,,,,,,,,EJEMPLO_NO_VALIDADO,[POR COMPLETAR],

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+*.egg-info/
+
+# Bases de datos generadas (la fuente de verdad es el CSV / el .md)
+*.sqlite
+*.sqlite3
+*.db
+
+# Sistema / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Datos sensibles de finca del usuario (no versionar por defecto).
+# Quitar esta línea si se decide versionar registros concretos.
+datos/registros/**/privado/
