@@ -13,7 +13,10 @@ Construcción por fases. Cada fase deja algo usable. Marcar el avance aquí.
 - [ ] Validación de supuestos con el usuario/agrónomo (`decisiones-pendientes.md`).
 
 ## Fase 2 — Contenido agronómico
-- [ ] Completar 1 **cultivo piloto** de punta a punta (estándar de calidad).
+- [~] **Cultivo piloto: papa** — monografía completada de punta a punta con fuente
+      primaria INTA 2016 (`conocimiento/cultivos/papa/papa.md`), ficha MIP de tizón
+      tardío y datos volcados a `datos/parametros/`. **Pendiente:** validación del
+      agrónomo, Kc (FAO-56), T base, costos y verificación SFE de agroquímicos.
 - [ ] Completar cultivos prioritarios (ver `decisiones-pendientes.md` §Cultivos).
 - [ ] Protocolos de decisión: diagnóstico general, plan de fertilización, plan de
       riego, MIP, interpretación de análisis de suelo/foliar.

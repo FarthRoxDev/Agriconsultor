@@ -1,10 +1,14 @@
 # Diccionario de datos
 
 Define la estructura de los archivos en `datos/`. Regla (CLAUDE.md): **toda fila con
-un número debe tener `fuente` y `fecha_consulta`**. Las filas de ejemplo incluidas
-para mostrar el formato llevan `estado = EJEMPLO_NO_VALIDADO` y **no deben usarse**
-como dato real hasta ser reemplazadas por valores con fuente y validadas por el
-agrónomo (pasan a `estado = VALIDADO`).
+un número debe tener `fuente` y `fecha_consulta`**. Estados posibles del campo `estado`:
+
+- `EJEMPLO_NO_VALIDADO` — fila de muestra para enseñar el formato; **no usar** como dato real.
+- `CITADO` — valor real **con fuente citada**, pendiente de validación por el agrónomo.
+- `VALIDADO` — valor con fuente **y** revisado/validado por el agrónomo.
+
+Las filas de ejemplo se reemplazan por valores `CITADO` al hallar la fuente, y pasan a
+`VALIDADO` solo tras la revisión del agrónomo.
 
 Convención de valores faltantes: celda vacía o `[POR COMPLETAR]`. Nunca inventar.
 
