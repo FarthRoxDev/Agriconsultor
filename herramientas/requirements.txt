@@ -1,0 +1,10 @@
+# Núcleo de cálculo: sin dependencias (biblioteca estándar de Python).
+# Solo para desarrollo/pruebas:
+pytest>=7.0
+
+# Dependencias OPCIONALES para fases futuras (teledetección, datos). Descomentar
+# cuando se implemente el módulo correspondiente; mantener el núcleo liviano.
+# pandas>=2.0          # manejo de datos/CSV
+# numpy>=1.24          # cálculo vectorial
+# rasterio>=1.3        # lectura de imágenes satelitales/dron (Fase 5)
+# earthengine-api      # Google Earth Engine (Fase 5)

@@ -1,0 +1,44 @@
+{
+  "enabledPlugins": {
+    "document-skills@anthropic-agent-skills": true,
+    "superpowers@superpowers-dev": true
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/setup-entregables.sh --quiet || true"
+          }
+        ]
+      }
+    ]
+  },
+  "extraKnownMarketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "awesome-claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ComposioHQ/awesome-claude-plugins"
+      }
+    },
+    "superpowers-dev": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    }
+  }
+}
