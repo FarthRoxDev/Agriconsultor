@@ -26,8 +26,19 @@ conocimiento/          → saber agronómico en .md (cultivos, protocolos, suelo
 herramientas/          → paquete Python de cálculo auditable (con tests)
 datos/                 → parámetros, estacionalidad, referencias y registros de finca
 fuentes/               → referencias BibTeX y bitácoras de búsqueda
-.claude/skills/        → flujos empaquetados que el asistente invoca
+entregables/           → generación de informes (DOCX/PDF), presentaciones (PPTX) y libros
+scripts/               → utilidades (setup-entregables.sh instala la cadena de render)
+.claude/               → skills, plugins/marketplaces y hook de arranque
 ```
+
+## Entregables (documentos, presentaciones, PDFs)
+Agriconsultor convierte su conocimiento en productos profesionales con una cadena ya
+instalada (pandoc, typst, quarto, Marp, python-pptx, PptxGenJS) y las skills oficiales
+`document-skills` (pptx/docx/pdf/xlsx) + `superpowers`. Instalación reproducible:
+```bash
+bash scripts/setup-entregables.sh      # idempotente; también corre en SessionStart
+```
+Ver [`entregables/README.md`](./entregables/README.md) para recetas y plantillas.
 
 ## Estado
 En construcción por fases (ver [`docs/ROADMAP.md`](./docs/ROADMAP.md)). Los cimientos

@@ -99,8 +99,24 @@ afirmación | evidencia | fuente (URL/DOI) | fecha de consulta | confianza (alto
 | `datos/esquema/` | Diccionario de datos y esquemas (CSV/SQLite) |
 | `fuentes/refs/` | Referencias BibTeX |
 | `fuentes/logs/` | Bitácora de búsquedas (incluye los `[NO ENCONTRADO]`) |
+| `entregables/` | Generación de documentos, presentaciones y PDFs (ver su README) |
+| `scripts/` | Utilidades (p. ej. `setup-entregables.sh` instala la cadena de render) |
 | `.claude/skills/` | Skills empaquetadas (flujos que el asistente invoca) |
+| `.claude/settings.json` | Plugins y marketplaces habilitados + hook de arranque |
 | `docs/` | Arquitectura, metodología, roadmap, decisiones, prompt maestro |
+
+## 6 bis. Entregables (informes, presentaciones, PDFs)
+
+Para convertir el conocimiento en productos (informe DOCX/PDF, presentación PPTX/slides,
+manual/libro), usar el subsistema `entregables/` (ver su README):
+
+- **Dentro de Claude Code:** preferir las skills `document-skills` (pptx/docx/pdf/xlsx) y,
+  para tareas complejas por fases, `superpowers` (habilitadas en `.claude/settings.json`).
+- **Cadena de render instalada** (`scripts/setup-entregables.sh`): pandoc, typst, quarto,
+  Marp, python-pptx, python-docx, PptxGenJS.
+- **Paridad:** preferir una sola fuente (`.qmd`/`.md`) → varios formatos, en vez de copias.
+- **Regla:** todo número en un entregable conserva su **fuente** (§3); no exportar informes
+  con cifras sin respaldo.
 
 ## 7. Gates de calidad (el trabajo NO está terminado si…)
 

@@ -21,3 +21,11 @@ env/
 # Datos sensibles de finca del usuario (no versionar por defecto).
 # Quitar esta línea si se decide versionar registros concretos.
 datos/registros/**/privado/
+
+# Entregables (subsistema de generación de documentos/presentaciones/PDFs)
+node_modules/
+# resultados generados (regenerables)
+entregables/salidas/
+.quarto/
+_book/
+*_files/

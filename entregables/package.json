@@ -1,0 +1,12 @@
+{
+  "name": "agriconsultor-entregables",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cadena JS para generar entregables (presentaciones y PDFs) de Agriconsultor",
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.0.0"
+  }
+}

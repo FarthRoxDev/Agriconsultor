@@ -1,0 +1,69 @@
+---
+title: "Informe agronómico — [Cultivo / Finca]"
+subtitle: "Agriconsultor"
+author: "Agriconsultor (revisar y atribuir)"
+date: today
+lang: es
+format:
+  pdf:
+    pdf-engine: typst     # PDF de alta calidad sin LaTeX
+    toc: true
+    number-sections: true
+  docx:
+    toc: true
+  html:
+    toc: true
+    embed-resources: true
+---
+
+<!--
+PLANTILLA DE INFORME. Una sola fuente -> PDF, DOCX y HTML.
+Render:
+  quarto render informe-agronomico.qmd --to pdf
+  quarto render informe-agronomico.qmd --to docx
+Regla CLAUDE.md: toda cifra conserva su fuente. No incluir números sin respaldo.
+Los datos provienen de ../../datos/ y el texto de ../../conocimiento/.
+-->
+
+# Resumen
+
+Objetivo del informe, cultivo, zona/altitud y recomendación principal en 3–5 líneas.
+
+# Contexto
+
+- **Cultivo:** _____ (*género especie*)
+- **Zona / altitud:** _____ (msnm, vertiente)
+- **Sistema:** campo abierto / protegido / orgánico / convencional
+
+# Diagnóstico
+
+Hallazgos con su evidencia. Formato: afirmación | fuente | fecha | confianza.
+
+# Recomendación
+
+Acciones concretas (dosis, fechas, labores) con su cálculo y fuente. Marcar
+`⟨inferencia⟩` lo que no sea dato duro.
+
+# Datos de respaldo
+
+: Rendimiento de papa por cantón en Costa Rica (t/ha). Fuente: MAG 2016, cit. en INTA 2016, p. 11. {#tbl-rend}
+
+| Cantón    | t/ha |
+|-----------|------|
+| Cartago   | 25.5 |
+| Alvarado  | 25.2 |
+| Zarcero   | 23.8 |
+| Turrialba | 23.8 |
+| Naranjo   | 23.6 |
+| El Guarco | 23.1 |
+| Oreamuno  | 22.3 |
+| Dota      | 21.5 |
+
+# Seguimiento
+
+Qué medir/registrar en `datos/registros/` para el próximo ciclo.
+
+# Fuentes
+
+- Avilés Chaves, J. & Piedra Naranjo, R. (2016). *Manual del cultivo de papa en Costa
+  Rica.* INTA/PRIICA. ISBN 978-9968-586-11-5. https://hdl.handle.net/11324/3145
